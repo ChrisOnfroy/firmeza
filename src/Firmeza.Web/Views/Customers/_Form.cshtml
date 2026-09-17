@@ -1,0 +1,15 @@
+@model Firmeza.Web.Models.Customer
+<form method="post" class="col-md-7">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input asp-for="Id" type="hidden" />
+    <div class="mb-3"><label asp-for="DocumentType"></label><input asp-for="DocumentType" class="form-control" /></div>
+    <div class="mb-3"><label asp-for="DocumentNumber"></label><input asp-for="DocumentNumber" class="form-control" /></div>
+    <div class="mb-3"><label asp-for="Name"></label><input asp-for="Name" class="form-control" /></div>
+    <div class="mb-3"><label asp-for="Address"></label><input asp-for="Address" class="form-control" /></div>
+    <div class="mb-3"><label asp-for="Phone"></label><input asp-for="Phone" class="form-control" /></div>
+    <div class="mb-3"><label asp-for="Email"></label><input asp-for="Email" class="form-control" /></div>
+    <div class="form-check mb-3"><input asp-for="IsActive" class="form-check-input" /><label asp-for="IsActive"></label></div>
+    <button class="btn btn-primary" type="submit">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
+@section Scripts { <partial name="_ValidationScriptsPartial" /> }
