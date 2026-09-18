@@ -1,8 +1,51 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<section class="hero-panel mb-4">
+    <div>
+        <span class="eyebrow">Panel de control</span>
+        <h1>Gestiona tu negocio con claridad.</h1>
+        <p>Administra productos, clientes y ventas desde un solo lugar.</p>
+    </div>
+    <div class="hero-panel__accent">F</div>
+</section>
+
+<div class="section-heading">
+    <div>
+        <span class="eyebrow">Accesos rapidos</span>
+        <h2>Tu operacion diaria</h2>
+    </div>
+</div>
+
+<div class="row g-4">
+    <div class="col-md-6 col-xl-4">
+        <a class="dashboard-card" asp-controller="Products" asp-action="Index">
+            <span class="dashboard-card__icon dashboard-card__icon--blue">P</span>
+            <span>
+                <strong>Productos</strong>
+                <small>Consulta y administra tu inventario</small>
+            </span>
+            <span class="dashboard-card__arrow">&rarr;</span>
+        </a>
+    </div>
+    <div class="col-md-6 col-xl-4">
+        <a class="dashboard-card" asp-controller="Customers" asp-action="Index">
+            <span class="dashboard-card__icon dashboard-card__icon--green">C</span>
+            <span>
+                <strong>Clientes</strong>
+                <small>Accede a tu cartera de clientes</small>
+            </span>
+            <span class="dashboard-card__arrow">&rarr;</span>
+        </a>
+    </div>
+    <div class="col-md-6 col-xl-4">
+        <div class="dashboard-card dashboard-card--muted">
+            <span class="dashboard-card__icon dashboard-card__icon--orange">V</span>
+            <span>
+                <strong>Ventas</strong>
+                <small>Proximamente disponible</small>
+            </span>
+        </div>
+    </div>
 </div>
